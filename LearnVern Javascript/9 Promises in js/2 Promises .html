@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<style>
+    #Result{
+          font-size: 35px;
+          color: red;
+          text-align: right;
+    }
+
+    #Result1{
+          font-size: 35px;
+          color: red;
+          text-align: right;
+    }
+</style>
+<body>
+    <p id="Result"></p>
+    <p id="Result1"></p>
+
+
+    <script>
+
+// using callback
+
+setTimeout(function(){promise("I Love You!!!");},3000)
+
+function promise(demo){
+    document.getElementById("Result").innerHTML=demo;
+}
+
+//-----------------------------------------------------//
+
+
+// using promises 
+
+let myPromise = new Promise(function(Resolve,Reject){
+    setTimeout( function(){
+        Resolve("I Love You Too!")
+    },3000)
+})
+
+myPromise.then(function(res){
+document.getElementById("Result1").innerHTML=res;
+})
+
+    </script>
+</body>
+</html>

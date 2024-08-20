@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+</head>
+<body>
+    
+    <canvas id="myCanvas" width="300" height="200" style="border: 2px solid;">
+        Your browser does not support the HTML 5 Canvas Tag
+    </canvas>
+
+
+
+
+    <canvas id="myCanvas2" width="300" height="200" style="border: 3px solid;">
+        Your browser does not support the HTML 5 Canvas Tag
+    </canvas>
+
+
+
+
+    <canvas id="myCanvas3" width="300" height="200" style="border: 3px solid;">
+        Your browser does not support the HTML 5 Canvas Tag
+    </canvas>
+
+
+
+    <canvas id="myCanvas4" width="300" height="200" style="border: 3px solid;">
+        Your browser does not support the HTML 5 Canvas Tag
+    </canvas>
+
+
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.fillStyle = "#ff0000";
+        ctx.fillRect(0,0,200,100);
+
+    </script>
+
+
+
+
+<script>
+    var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+</script>
+
+
+
+
+<script>
+    var c = document.getElementById("myCanvas3");
+    var ctx = c.getContext("2d");
+
+    ctx.beginPath();
+    // x=95 y=50 r=40 start=0 stop =2*Math.PI
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+</script>
+
+
+
+
+
+<script>
+    var c = document.getElementById("myCanvas4");
+    var ctx = c.getContext("2d");
+
+    ctx.font = "30px Arial";
+    ctx.fillText("Chaitanya Raut",10,50);
+    ctx.strokeText("Chaitanya Raut",10,100);
+    
+</script>
+
+
+</body>
+</html>

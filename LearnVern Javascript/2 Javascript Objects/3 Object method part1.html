@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h3>Object.assign()</h3>")
+
+
+        const object1 = {
+            a: 1,
+            b: 2,
+            c: 3
+        }
+
+        const object2 = {
+            d: 1,
+            e: 2,
+            f: 3
+        }
+
+        const object3 = Object.assign({c:5,d:6},object1);
+        console.log(object1,object3)
+
+    </script>
+    <hr>
+
+
+
+
+
+
+
+    <script>
+        document.write("<h3>Object.create()</h3>")
+
+function fruit(){
+    this.name = "Grapes";
+}
+function fun(){
+    fruit.call(this);
+}
+
+fun.prototype = Object.create(fruit.prototype);
+const app = new fun();
+console.log(app)
+
+
+    </script>
+    <hr>
+
+
+
+
+
+
+    <script>
+        document.write("<h3>Object.freeze()</h3>")
+
+
+        const object4 = {
+            age : 23
+        }
+
+
+        const object5 = Object.freeze(object4);
+        object5.age = 32;
+
+        console.log(object5.age);
+    </script>
+    <hr>
+
+
+
+
+
+
+
+
+    <script>
+        document.write("<h3>Object.is()</h3>")
+
+
+        const object6 = {
+            age : 24
+        }
+        const object7 = {
+            age : 24
+        }
+
+
+        console.log(Object.is(object6.age,object7.age));
+    </script>
+    <hr>
+
+
+
+
+
+
+
+
+    <script>
+        document.write("<h3>Object.isExtensible()</h3>")
+
+        const object8 = {
+
+        }
+
+        console.log(Object.is(object8))
+        console.log(Object.isExtensible(object8))
+    </script>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.write("<h3>Object.isSealed()  and  object.Seal()   and    object.isFrozen()    </h3>")
+
+        const object9 = {
+            name : "abc"
+
+        }
+
+        const objectt10 = Object.seal(object9);
+        objectt10.name = "def";
+
+        console.log(objectt10.name);
+
+        delete objectt10.name;
+        console.log(objectt10.name);
+
+
+
+        console.log(Object.isSealed(objectt10));
+        console.log(Object.isFrozen(objectt10));
+    </script>
+    <hr>
+    
+
+
+    
+
+
+
+
+    <script>
+        document.write("<h3>Object.value()</h3>")
+
+        const object11 = {
+            a: "abc",
+            b : 24,
+            c : true
+        }
+
+        console.log(Object.values(object11));
+    </script>
+
+</body>
+
+</html>

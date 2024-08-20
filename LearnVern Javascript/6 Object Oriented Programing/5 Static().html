@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of static() method</title>
+</head>
+<body>
+    <h1 id="static"></h1>
+
+
+    <script>
+
+
+// Ex 1]
+        class Test{
+            static display(){
+                return " My name is Chaitanya"
+            }
+        }
+
+        document.getElementById('static').innerHTML= Test.display();
+
+        //--------------------------------------------------------------------------//
+
+
+// Ex 2]
+
+        class Test1{
+            static display1(){
+                return " My name is Chaitanya"
+            };
+
+            static display2(){
+                return " My sir  name is Raut"
+            }
+        }
+
+        document.getElementById('static').innerHTML= Test1.display1();
+        document.getElementById('static').innerHTML= Test1.display2();
+
+        //-----------------------------------------------------------------------------------------//
+
+
+// Ex 3]
+
+        class Test2{
+            static display3(){
+                return " My name is Chaitanya"
+            };
+
+            static display3(){
+                return " My sir  name is Raut"
+            }
+        }
+
+        document.getElementById('static').innerHTML= Test2.display3();
+        document.getElementById('static').innerHTML= Test2.display3();
+
+//--------------------------------------------------------------------------------------//
+
+// Ex 4]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Session Storage</title>
+</head>
+<body>
+    
+
+<button onclick="clickCounter()">Click Me !</button>
+
+<p id="result"></p>
+
+<p>Click the button to start the counter</p>
+
+
+
+
+
+
+
+
+<script>
+    function clickCounter(){
+        if(typeof(Storage) != "undefined"){
+            if(sessionStorage.clickCount){
+                sessionStorage.clickCount = Number(sessionStorage.clickCount) + 1;
+            }else{
+                sessionStorage.clickCount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button" + sessionStorage.clickCount + " times."
+        }else{
+            document.getElementById("result").innerHTML = "Your browser does not suipport web storage."
+ 
+        }
+
+        
+    }
+</script>
+
+</body>
+</html>

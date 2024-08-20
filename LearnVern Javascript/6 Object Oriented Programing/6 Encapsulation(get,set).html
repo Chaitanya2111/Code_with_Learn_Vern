@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+
+    <h1 id="get"></h1>
+    <script>
+        class Student{
+            constructor(){
+                let name;
+                let marks;
+            }
+
+            getname(){
+                return this.name;
+            }
+
+            setname(name){
+                this.name=name;
+            }
+
+
+            getmarks(){
+                return this.marks;
+            }
+
+            setmarks(marks){
+                this.marks =marks;
+            }
+        }
+
+
+        let std = new Student();
+        std.setname('Chaitanya');
+        std.setmarks(90);
+
+document.getElementById('get').innerHTML =std.getname() + "  "+ "your marks  is " + std.getmarks()
+    </script>
+</body>
+</html>

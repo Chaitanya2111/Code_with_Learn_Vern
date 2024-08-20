@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method 4</title>
+</head>
+
+<body>
+
+    <h3>1) of() :-</h3>
+    <script>
+        document.writeln(Array.of(1, 5, 8, 9, 4));
+        console.log(Array.of(1, 5, 8, 9, 4));
+    </script>
+    <hr>
+
+
+
+
+    <h3>2) pop() & push():-</h3>
+    <script>
+
+        var arr = [5, 7, 8];
+        arr.push(6);
+        document.write(arr);
+        document.write("<br>");
+        document.write(arr.pop());
+
+    </script>
+    <hr>
+
+
+
+    <h3>3) reverse() :-</h3>
+    <script>
+        var arr = [2, 4, 6, 8, 10];
+
+        document.write(arr.reverse());
+    </script>
+    <hr>
+
+
+    <h3>4) reduce() :-</h3>
+    <script>
+        var arr = [4, 5, 6, 7, 9, 3];
+        var a = arr.reduce(function (accumulator, currenetValue) {
+            return accumulator + currenetValue;
+        });
+
+        document.write(a);
+    </script>
+    <hr>
+
+
+
+    <h3>5) some() :-</h3>
+    <script>
+        var arr = [32, 45, 67, 80, 65, 45, 20];
+
+        function test(argument) {
+            return argument > 50;
+        }
+
+        var result = arr.some(test);
+
+        document.write(result);
+    </script>
+    <hr>
+
+
+
+
+    <h3>6) shift() :-</h3>
+    <script>
+        var arr = [4, 5, 67, 89, 7];
+
+        document.write(arr.shift());
+    </script>
+    <hr>
+
+
+
+
+    <h3>7) slice() :-</h3>
+    <script>
+        var arr = [3, 6, 4, 5, 8, 9, 12, 34, 56, 788, 46];
+
+        var slicedArray = arr.slice(5, 9);
+
+        document.write(slicedArray);
+    </script>
+
+</body>
+
+</html>

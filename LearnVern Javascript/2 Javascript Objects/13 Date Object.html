@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+
+<body>
+    <script>
+        // 1] Using Date()
+
+        var d = Date();
+
+        document.writeln("Today's Date is :-" + d);
+
+        document.write("<hr>")
+        document.write("<br>")
+
+
+
+
+
+
+        /* 2]Using Date(year,month,day,hours,minutes,seconds,miliseconds) */
+
+        var d1 = new Date(2015, 10, 21, 3, 30, 5, 50);
+
+        document.write("Date is :-" + d1);
+
+        document.write("<hr>")
+        document.write("<br>")
+
+
+
+
+
+        // 3] Using Date(datestring)
+
+        var d2 = new Date(" March 21,2001 12:12:12");
+        document.write("Date is :- " + d2);
+
+        document.write("<hr>")
+        document.write("<br>")
+
+
+
+
+
+        // 4] using Date(milliseconds)
+
+        var d3 = new Date(0);
+
+        document.write(d3)
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+
+</html>

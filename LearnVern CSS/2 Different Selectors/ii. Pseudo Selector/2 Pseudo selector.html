@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo selector</title>
+
+    <style>
+
+        /* This is Pseudo :lang selector */
+        p:lang(cr) {
+            color: red;
+        }
+
+
+        
+        /* This is Pseudo :focus selector */
+
+        input:focus {
+            border-radius: 40px;
+        }
+
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <p>This P tag is without lang attribute.</p>
+
+    <p lang="cr">This P tag is with lang attribute.</p>
+
+    <hr>
+
+    <input type="text" name="firstname" placeholder="First Name">
+
+    <hr>
+
+</body>
+
+</html>

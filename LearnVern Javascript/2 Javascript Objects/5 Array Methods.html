@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+
+<body>
+
+    <h3>1) Concat() :-</h3>
+    <script>
+        var arr1 = ["c", "c++", "java"];
+        var arr2 = ["HTML", "CSS", "Javascript", "Android"];
+
+        var concatenatedArray = arr1.concat(arr2);
+
+        document.write(concatenatedArray);
+    </script>
+    <hr>
+
+
+
+
+
+
+
+    <h3>2) copyWithin() :-</h3>
+    <script>
+        var arr = ["mango", "Apple", "Banana", "Orange"];
+
+        var copyWithinArray = arr.copyWithin(0, 1, 3);
+
+        document.write(copyWithinArray);
+    </script>
+    <hr>
+
+
+
+
+
+
+
+
+    <h3>3) entries() :-</h3>
+    <script>
+        var arr3 = ["Tiger", "Lion", "Cheeta", "Lepord", "Zebra"];
+
+        var entriesArray = arr3.entries();
+
+        for (value of entriesArray) {
+            document.write(value + "<br>");
+        }
+    </script>
+    <hr>
+
+
+
+
+
+
+
+    <h3>4) every() :-</h3>
+    <script>
+        var arr4 = [30, 40, 59, 58, 65, 78, 43];
+
+        function check(value) {
+            return value > 35;
+        }
+
+        document.write(arr4.every(check));
+    </script>
+    <hr>
+
+
+
+
+
+
+    <h3>5) flat() :-</h3>
+    <script>
+        var arr5 = [11, 12, [13, 14], 15, [16, 17], 18, [19, 20]];
+
+        var flatArray = arr5.flat();
+
+        document.write(flatArray);
+    </script>
+    <hr>
+
+
+
+
+
+
+
+
+    <h3>6) flatMap()</h3>
+    <script>
+        var arr6 = [2, 4, 6, 8, 10];
+
+        var flatMapArray = arr6.flatMap(x => [x / 2]);
+
+        document.write(flatMapArray);
+    </script>
+    <hr>
+</body>
+
+</html>

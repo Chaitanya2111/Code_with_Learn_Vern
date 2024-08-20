@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Mthods Part 2</title>
+</head>
+
+<body>
+
+    
+    <h3>1) fill() :-</h3>
+    <script>
+        var languages = ['Html', "java", "c", "c++"];
+
+        var result = languages.fill("Javascript");
+
+        document.write(result);
+    </script>
+    <hr>
+
+
+
+
+
+
+
+    <h3>2) from() :-</h3>
+    <script>
+        var fromArray = Array.from("Hello Chaitanya");
+        document.write(fromArray);
+    </script>
+    <hr>
+
+
+
+
+
+
+    <h3>3) filter :-</h3>
+    <script>
+        var num = [34, 60, 20, 45, 6, 89, 55, 78, 90, 100];
+
+        function check(value) {
+            return value > 40;
+        }
+
+        document.write(num.filter(check));
+    </script>
+    <hr>
+
+
+
+
+
+
+
+    <h3>4) find() :-</h3>
+    <script>
+
+        var number = [23, 3, 45, 678, 89, 63, 46, 63];
+
+        var findArray = number.find(x => x > 30);
+
+        document.write(findArray);
+    </script>
+    <hr>
+
+
+
+
+
+
+    <h3>5) findIndex()</h3>
+    <script>
+        var value = [1, 12, 23, 43, 57, 89, 90, 100, 234];
+
+        var findIndexArray = value.findIndex(x => x > 30);
+
+        document.write(findIndexArray);
+    </script>
+    <hr>
+
+
+
+
+
+
+
+
+    <h3>6) forEach() :-</h3>
+    <script>
+        var value1 = [11, 22, 3, 44, 55, 66, 77, 88, 99, 100];
+        var value2 = 0;
+
+        value1.forEach(function (fetch) {
+            document.writeln(value2 += fetch);
+            console.log(value2 += fetch);
+        });
+    </script>
+    <hr>
+</body>
+
+</html>

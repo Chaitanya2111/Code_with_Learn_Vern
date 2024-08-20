@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <button id="mybtn">btn</button>
+
+    <button id="mybtn2">btn2</button>
+    <p id="ptag"></p>
+    <p id="ptag1"></p>
+    <script>
+        document.getElementById("mybtn").addEventListener("click",fun);
+
+        function fun(){
+            document.body.style.background='green'
+        }
+
+        //-----------------------------------------------------------------//
+
+        document.getElementById("mybtn2").addEventListener("click",myp)
+        document.getElementById("mybtn2").addEventListener("click",myp1)
+
+        function myp(){
+            document.getElementById("ptag").innerHTML="Hello chaitanya";
+        }
+
+
+        function myp1(){
+            document.getElementById("ptag1").innerHTML="How Are You";
+
+        }
+    </script>
+</body>
+</html>

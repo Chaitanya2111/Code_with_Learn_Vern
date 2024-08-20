@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object</title>
+</head>
+<body>
+    <button onclick="goBack()">goback</button>
+    <hr>
+    <button onclick="goForward()">goforward</button>
+<hr>
+<button onclick="goto()">goto</button>
+
+    <script>
+        // document.write(history.length)
+
+
+        //1) goBack()
+        function goBack(){
+            window.history.back()
+        }
+
+        // 2) goForward()
+        
+        function goForward(){
+            window.history.forward()
+        }
+
+        // 3) go()
+
+        function goto(){
+            window.history.go(3)
+        }
+    </script>
+</body>
+</html>

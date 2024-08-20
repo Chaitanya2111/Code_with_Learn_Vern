@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBLClick</title>
+</head>
+<body>
+    <button ondblclick="click1()">click</button>
+    <br><br>
+
+    <button id="mybtn">click1</button>
+<br>
+<br>
+
+<button id="mybtn2">click2</button>
+
+    <script>
+        function click1(){
+            document.body.style.background='red';
+        }
+        //-------------------------------------------------------------------------------------//
+
+        document.getElementById("mybtn").ondblclick = function(){
+            document.body.style.background="green";
+        }
+        //--------------------------------------------------------------------------------------//
+
+document.getElementById("mybtn2").addEventListener("dblclick",myfun);
+
+function myfun(){
+    document.body.style.background="yellow"
+}
+    </script>
+</body>
+</html>

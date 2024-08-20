@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object with function</title>
+</head>
+
+<body>
+    <script>
+        /* class car{
+           var  model;
+            var  color;
+             car(model,color){
+                 this.model =model;
+                 this.color = color;
+             }
+         }
+ 
+         var XUV = new car("xuv","red");
+       */
+
+        var add = new Function("num1", "num2", "return num1 + num2");
+        document.write(add(2, 8))
+        document.write("<br>")
+        document.write(add(10, 50))
+        document.write("<br>")
+
+    </script>
+
+    <hr>
+    <hr>
+
+    <script>
+        var power = new Function("num1", "num2", "return Math.pow(num1,num2)")
+        document.write(power(3, 2))
+        document.write("<br>")
+        document.write(power(5, 5))
+    </script>
+
+    <hr>
+    <hr>
+
+
+
+
+
+    <h2> Following Are Javascript Function Methods</h2>
+
+    <h3>Method 1 :- call()</h3>
+    <script>
+        function Emp(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+
+        function PermanentEmp(id, name) {
+            Emp.call(this, id, name);
+        }
+
+        function TemporaryEmp(id, name) {
+            Emp.call(this, id, name);
+        }
+
+
+        var pEmp = new PermanentEmp(1, "Chaitanya Raut");
+        var tEmp = new TemporaryEmp(2, "Ranjit Jadhav");
+
+        document.write(pEmp.id + " " + pEmp.name);
+        document.write("<br>")
+        document.write("<br>")
+        document.write(tEmp.id + " " + tEmp.name);
+
+    </script>
+
+    <hr>
+    <hr>
+
+
+
+
+<h3>Method 2 :-apply()</h3>
+<script>
+var arr = [3,5,7,9,7,10];
+
+var max = Math.max.apply(null,arr);
+var  min = Math.min.apply(null,arr);
+
+document.write(max)
+document.write("<br>")
+document.write("<br>")
+document.write(min)
+
+</script>
+
+<hr>
+<hr>
+
+
+<h3>Method 3 :- bind()</h3>
+<script>
+     var website ={
+        name : "LearnVern",
+        getName : function(){
+            return this.name
+        }
+     }
+
+var unboundGetName = website.getName;
+var boundGetName = unboundGetName.bind(website);
+
+
+    //  document.write(website.getName());
+    document.write(boundGetName())
+</script>
+
+<hr>
+<hr>
+
+
+
+
+<h3>Method 4 :- toString()</h3>
+<script>
+    function add(num1,num2){
+        return num1+num2;
+    }
+
+    document.write(add.toString());  
+</script>
+</body>
+
+</html>

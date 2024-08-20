@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <p id="result"></p>
+
+
+
+<script>
+    if(typeof(Storage) != "undefined"){
+        localStorage.setItem("lastname","Raut");
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    } else{
+        document.getElementById("result").innerHTML = " Sorry! Your Browser doen't support web storage."
+    }
+</script>
+
+</body>
+</html>

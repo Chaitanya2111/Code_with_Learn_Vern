@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form action="" name="myform" method="post" onsubmit="return validateFrom()">
+        <fieldset>
+            <legend>
+                <h2>Form Validation</h2>
+            </legend>
+
+            <label for="">First Name :- </label><input type="text" name="name">
+            <br>
+            <br>
+            <label for="">Password :- </label><input type="password" name="password">
+            <br><br>
+            <button>Click Me</button>
+        </fieldset>
+    </form>
+
+
+    <script>
+
+        function validateFrom() {
+            let name = document.myform.name.value;
+            let password = document.myform.password.value;
+            if (name == "" || name == null) {
+                alert('Enter Valid Name')
+            } else if (password.length < 6) {
+                alert('password must be 6 character')
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

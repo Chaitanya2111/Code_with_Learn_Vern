@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Selector</title>
+    <style>
+
+        .background-lightgreen {
+            background-color: lightgreen;
+        }
+
+    /* this is :hover pseudo selector */
+        .background-lightgreen:hover {
+            color: rgb(255, 0, 128);
+            background-color: rgb(225, 225, 14);
+            text-align: center;
+
+        }
+
+
+.background-anchor{
+    text-align: center;
+}
+
+    /* this is :active pseudo selector */
+
+.background-anchor a:active{
+    color: red;
+}
+
+
+
+
+.background-visited{
+    color: brown;
+}
+    /* this is :visited pseudo selector */
+
+.background-visited a:visited{
+    color: rgb(213, 11, 169);
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="background-lightgreen">
+        <h1> Hello Chaitanya ......</h1>
+    </div>
+
+    <hr>
+
+
+<div class="background-anchor">
+    <a href="https://www.google.com/" target="_blank">This is a link</a>
+</div>
+
+
+<hr>
+
+<div class="background-visited">
+    <a href="https://www.google.com/" target="_blank">This is a link</a>
+</div>
+
+
+    
+</body>
+
+</html>

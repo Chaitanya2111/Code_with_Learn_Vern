@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window object method</title>
+</head>
+<body>
+
+
+    <button onclick="message()">Alert</button>
+    <hr>
+
+    
+    <button onclick="message1()">Confirm</button>
+<hr>
+
+
+<input type="button" value="What is your age?" onclick="message2()">
+<hr>
+
+<input type="button" value="Open" onclick="message3()">
+<hr>
+
+<input type="button" value="setTimeout" onclick="message4()">
+<hr>
+
+<input type="button" value="close" onclick="message5()">
+
+
+    <script>
+
+        // 1) alert()
+
+        function message(){
+            alert('you clicked button')
+        }
+
+
+// 2) confirm()
+
+function message1(){
+    let temp =confirm('are you sure !!!');
+
+    if(temp == true){
+        alert('The value is true')
+    }else{
+        alert('The value is false')
+    }
+}
+
+
+// 3) prompt()
+
+function message2(){
+    let person = prompt('what is your age')
+
+    alert('person age is ' + person)
+}
+
+
+//4) open()
+
+function message3(){
+    open('https://novoresume.com/?noRedirect=true')
+
+}
+
+// 5) setTimeout()
+
+function message4(){
+    setTimeout(
+        function(){
+            alert('Hello Chaitanya !!!')
+        },2000
+    )
+};
+
+
+// 6) close()
+
+function message5(){
+close();
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods 3 </title>
+</head>
+
+<body>
+
+
+
+    <h3>1) include() :-</h3>
+    <script>
+        var arr = ["c", "c++", "java", "html"];
+
+        document.write(arr.includes("java"))
+    </script>
+    <hr>
+
+
+
+
+    <h3>2)indexOf() :-</h3>
+    <script>
+        var arr = ["RAUT", "JADHAV", "MORE", "DEVKAR"];
+
+        document.write(arr.indexOf("JADHAV"))
+    </script>
+    <hr>
+
+
+
+
+
+
+    <h3>3) isArray() :-</h3>
+    <script>
+        var arr = [1, 4, 5, 6, 7];
+        var arr1 = (1, 2, 3, 4, 5, 6, 8);
+        document.writeln(Array.isArray(arr));
+        document.write("<br>");
+        document.write(Array.isArray(arr1));
+    </script>
+    <hr>
+
+
+
+
+
+    <h3>4) join() :-</h3>
+    <script>
+        var arr = ["html", "css", "bootstrap", "js", "react"];
+        document.write(arr.join('-'));
+    </script>
+    <hr>
+
+
+
+
+
+    <h3>5) keys() :-</h3>
+    <script>
+        var arr = ["sonu", "monu", "kalu", "lal", "pka"];
+        var keyArray = arr.keys();
+
+        document.write(keyArray)
+
+        for (k of keyArray) {
+            document.writeln(k)
+        }
+    </script>
+    <hr>
+
+
+
+
+
+
+    <h3>6) lastIndexOf() :-</h3>
+    <script>
+        var arr = ["sonu", "monu", "kalu", "lal", "pka"];
+
+        document.write(arr.lastIndexOf("kalu"));
+    </script>
+    <hr>
+
+
+
+
+
+    <h3>7) map() :-</h3>
+    <script>
+        var arr = [50, 45, 40, 30, 15, 20, 25, 60, 55];
+
+        var mapArray = arr.map(x => x / 5);
+
+        document.write(mapArray);
+    </script>
+</body>
+
+</html>

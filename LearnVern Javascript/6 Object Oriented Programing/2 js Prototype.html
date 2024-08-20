@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Prototype</title>
+</head>
+<body>
+    <p id="proto"></p>
+
+    <script>
+// using functon
+
+function Person(fname,lname){
+    this.fname =fname;
+    this.lname =lname;
+
+}
+ 
+Person.prototype.fullname = function(){
+    return this.fname + "  "+this.lname
+}
+
+
+let emp1 = new Person("Chaitanya","Raut");
+let emp2 = new Person("Ranjit","Jadhav");
+
+document.getElementById('proto').innerHTML =emp1.fullname();
+document.getElementById('proto').innerHTML =emp2.fullname();
+
+
+
+//----------------------------------------------------------------------------------------------//
+
+// Creating property
+
+function student(name,no){
+    this.Name =name;
+    this.Number =no;
+}
+
+
+student.prototype.rollNo = 34;
+
+let st = new student('CR',1213);
+
+document.getElementById('proto').innerHTML =st.Name+ "  "+ st.Number+ "  " + st.rollNo
+
+    </script>
+</body>
+</html>

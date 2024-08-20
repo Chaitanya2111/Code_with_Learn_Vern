@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+
+    
+    <script>
+        /* 1) Creating array using Literals*/
+        document.write("<h3> 1) Creating array using Literals</h3>")
+
+        var employee = ["Chaitanya", "Rashmi", "Ranjit", "Bond"];
+
+        for (value of employee) {
+            document.write(value + "<br>");
+        }
+
+
+
+
+
+        /* 2)Creating array using new keyword*/
+        document.write("<h3> 2) Creating array using new keyword</h3>")
+
+
+        var fruits = new Array();
+
+        fruits[0] = "Orange";
+        fruits[1] = "Apple";
+        fruits[2] = "Mango";
+        fruits[3] = "Grapes";
+        fruits[4] = "Banana";
+
+        for (value of fruits) {
+            document.write(value + "<br>")
+        }
+
+
+
+
+
+
+
+        /* 3) Creating array using Constructor*/
+        document.write("<h3> 3) Creating array using Constructor</h3>")
+
+        var cars = new Array("XUV", "Swift", "Verna", "BMW");
+
+        for (value of cars) {
+            document.write(value + "<br>");
+        }
+
+    </script>
+</body>
+
+</html>

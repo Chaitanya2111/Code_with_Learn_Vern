@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+
+<body>
+    <script>
+        var grade = 'A';
+
+        document.write("<h3>Example of switch statement</h3>");
+
+        switch (grade) {
+            case 'A':
+                document.write("The student has secured A");
+                break;
+            case 'B':
+                document.write("The student has secured B");
+                break;
+            default:
+                document.write("The student has not secured any  grade");
+
+        }
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+        // Write a js program to display todays "Day".
+
+        document.write("<h3>Example of switch statement for get day</h3>");
+
+        switch (new Date().getDay()) {
+            case 1:
+                document.write("Its Monday");
+                break;
+            case 2:
+                document.write("Its Tuesday");
+                break;
+            case 3:
+                document.write("Its Wednesday");
+                break;
+            case 4:
+                document.write("Its Thursday");
+                break;
+            case 5:
+                document.write("Its Friday");
+                break;
+            case 6:
+                document.write("Its Saturday");
+                break;
+            case 7:
+                document.write("Its Sunday");
+                break;
+                default:
+                    document.write("Incorrect Input")
+        }
+
+
+    </script>
+</body>
+
+</html>

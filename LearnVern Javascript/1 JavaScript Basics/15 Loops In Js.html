@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops In Js</title>
+</head>
+<body>
+    <script>
+        // For Loop
+
+        document.write("<h3>Example of For loop</h3>");
+
+        for(var i = 1; i <= 5; i++){
+            document.write(i + "<br>");
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+        // While loop
+
+        document.write("<h3>Example of While loop</h3>");
+
+        var i = 1;
+
+        while(i<=5){
+            document.writeln (i);
+            i++;
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+
+        //  do....While loop
+
+        document.write("<h3>Example of do...While loop</h3>");
+var i = 1;
+
+do{
+    document.writeln(i);
+    i++;
+}while(i<=5)
+
+document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+
+// for...in loop
+
+document.write("<h3>Example of for...in loop</h3>");
+
+var temp = " ";
+
+var person ={
+    firstname : " Chaitanya",
+    lastname : "Raut",
+    age : 24,
+} 
+
+for (value in person){
+    // temp = temp + person[value] + " ";
+    document.write(person[value]);
+}
+
+document.write(temp);
+
+document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+// for...of loop
+
+document.write("<h3>Example of for...of  loop with Array</h3>");
+ var alphabets = ["A", "B", "C", "D"];
+
+ for(value of alphabets){
+     document.write(value);
+ }
+
+
+document.write("<h3>Example of for...of loop with String</h3>");
+
+var s = "chaitanya";
+
+for(value of s){
+    document.write(value + "<br>")
+}
+    </script>
+</body>
+</html>

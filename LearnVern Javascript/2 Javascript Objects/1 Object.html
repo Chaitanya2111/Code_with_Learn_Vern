@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        document.write("<h3>Creating Object in javascript :-</h3>")
+        document.write("<hr>")
+
+
+
+        document.write("<h4>1) Creating an object using object literals :-</h4>")
+
+        /* Creating an object using object literals*/
+        var person = {
+            firstName : "Chaitanya",
+            lastName : "Raut",
+            age : 24,
+            color : "Blakish"
+        }
+        
+        document.write(" Object Details :-" +person.firstName + " " + person.lastName + " " + person.age + " " + person.color + " " + "<br>");
+        
+        document.write("<hr>")
+
+        
+
+
+
+
+
+
+
+
+        document.write("<h4>2) creating an object using  new keyword (instance of an Object) :-</h4>")
+
+        /* creating an object using  new keyword (instance of an Object)*/
+
+    var emp = new Object();
+    
+    emp.id = 2137;
+    emp.name = "Chaitanya Raut";
+    emp.salary = 100000;
+
+    for (value in emp){
+        document.writeln(emp[value]);
+    }
+
+    document.write("<hr>")
+
+
+
+
+
+
+    
+    document.write("<h4> 3) creating an object using  an Object constructor :-</h4>")
+    
+/* creating an object using  an Object constructor */
+function employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+}
+
+var e = new employee(2137,"Chaitanya Raut",100000);
+
+for (value in e){
+    document.write(e[value] + " ")
+}
+
+document.write("<hr>")
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

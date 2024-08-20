@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of global variable using window object</title>
+</head>
+<body>
+    <script>
+/*function abc(){
+    window.x = "this is a variablaes"
+    document.write(window.x);
+}
+
+abc();
+def();
+
+document.write("<br>");
+document.write(window.x);
+
+function def(){
+document.write("<br>");
+document.write(window.x);
+}*/
+
+var temp = "this is a temp  variable"
+    
+function abc(){
+    var y = "this is a 'y' variable"
+    window.x = "this is a variablaes"
+    document.write(window.x);
+    alert(document.temp);
+}
+
+abc();
+def();
+
+document.write("<br>");
+document.write(window.y);
+
+function def(){
+document.write("<br>");
+document.write(window.x);
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of super keyword</title>
+</head>
+<body>
+    <p id="emp"></p>
+    <script>
+
+        // Parent Class
+        class Company{
+            constructor(){
+                this.Cname ="CR .PVT. LTD"
+            }
+        }
+
+        // Child Class
+
+        class EMP extends Company{
+            constructor(name,id){
+                super();
+this.Name =name;
+this.id = id;
+            }
+        }
+          
+        let emp1 = new EMP("Chaitanya",2111)
+
+        document.getElementById('emp').innerHTML=emp1.Name + " " +emp1.id +"  "+emp1.Cname;
+    </script>
+</body>
+</html>

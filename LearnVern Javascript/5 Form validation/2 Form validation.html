@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Form</legend>
+
+            password1 :- <input type="password" id="ps1">
+            <br>
+            <br>
+            password2 :- <input type="password" id="ps2">
+            <br>
+            <br>
+<button onclick="clickme()">click me </button>
+        </fieldset>
+    </form>
+
+
+    <script>
+        function clickme(){
+            let pass1 = document.getElementById("ps1").value;
+            let pass2 = document.getElementById("ps2").value;
+
+if(pass1 == pass2){
+return true;
+}else{
+    alert("Password not same")
+    return false;
+}
+
+        }
+    </script>
+</body>
+</html>

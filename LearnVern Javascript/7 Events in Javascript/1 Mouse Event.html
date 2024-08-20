@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+
+    <p style="height: 100px; width: 150px; border: 1px solid black;" id="ptag" onmouseover="onMouseover()" onmouseout="onMouseout()">p</p>
+    <button onclick="onClick()">Click Me</button>
+
+
+    <p onmouseup="onMouseup()" onm
+    ousemove="onMousemove()" style="height: 100px; width: 150px; border: 2px dotted red;" id="p1"></p>
+    <script>
+
+// 1] onclick()
+
+function onClick(){
+    document.getElementById('ptag').style.background = "red";
+}
+
+
+//2] onmouseover()
+
+function onMouseover(){
+    document.body.style.background ="yellow"
+}
+
+
+//3]onmouseout()
+
+function onMouseout(){
+    document.body.style.background ="green"
+}
+
+//4] onmouseup()
+
+function onMouseup(){
+document.getElementById('p1').style.background ="grey"
+}
+
+//5] onmousemove
+
+function onMousemove(){
+document.getElementById('p1').style.background ="blue"
+
+}
+    </script>
+</body>
+</html>
